@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Taking App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Keep</h1>
+        <input type="search" id="search" placeholder="Search" />
+        <button class="Add-noteBtn" id="navAddNote"><h3>Add Note</h3></button>
+      </div>
+
+      <div class="notes-container container">
+        <div
+          class="newNote-container form-control addNoteContainer"
+          id="addNoteContainer"
+        >
+          <input
+            type="text"
+            class="form-control input_title"
+            id="title"
+            placeholder="Title"
+          />
+          <hr />
+          <div class="textarea-box">
+            <textarea
+              name=""
+              class="form-control input_descp"
+              id="descp"
+              placeholder="Take a note..."
+            ></textarea>
+          </div>
+          <button type="button" class="Save-noteBtn btn" id="addNote">
+            Save
+          </button>
+        </div>
+
+        <div class="card-container notes" id="notes">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-header">
+                <h3 class="card-title">Hi</h3>
+                <div class="svg">
+                  <span class="btn card_btns delete btn-warning" id="deleteBtn"><i class="fa-solid fa-trash" id="fa-trash"></i></span>
+                  <span class="btn card_btns edit btn-warning"><i class="fa-solid fa-pen"></i></span>
+                </div>
+              </div>
+              <p class="card-text">There</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
